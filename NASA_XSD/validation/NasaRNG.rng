@@ -1,0 +1,33 @@
+<element name="APODs" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <oneOrMore>
+    <element name="API">
+      <element name="copyright">
+        <text/>
+      </element>
+	<element name="date">
+         <data type="date"/>
+      </element>
+      	<element name="explanation">
+        <text/>
+      </element>
+      	<element name="hdurl">
+        <text/>
+      </element>
+      	<element name="media_type">
+           <choice>
+      	<value>Image</value>
+      	<value>Video</value>
+    	</choice>
+      </element>
+      	<element name="service_version">
+        <text/>
+      </element>
+      <element name="title">
+        <text/>
+      </element>
+	<element name="url">
+        <text/>
+      </element>
+    </element>
+  </oneOrMore>
+</element>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="APODs">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="API">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="copyright" type="xs:string" />
+							<xs:element name="date" type="xs:date"/>
+							<xs:element name="explanation" type="xs:string"/>
+							<xs:element name="hdurl" type="xs:string"/>
+							<xs:element name="media_type">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="Image"/>
+										<xs:enumeration value="Video"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="service_version" type="xs:string"/>
+							<xs:element name="title" type="xs:string"/>
+							<xs:element name="url" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
